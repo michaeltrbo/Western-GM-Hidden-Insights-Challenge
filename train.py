@@ -3,7 +3,7 @@ import torch
 
 def main():
     # Initialize YOLOv8n from scratch (no pretrained weights)
-    model = YOLO("yolov8n.yaml")  # Model architecture only (no pretrained weights)
+    model = YOLO("yolov8n.yaml")  # Model architecture
 
     # Train YOLOv8n on your new dataset structure
     model.train(
@@ -12,7 +12,7 @@ def main():
         imgsz=640,
         batch=16,
         device="cuda",
-        workers=4,  # Reduce workers if needed (Windows often works better with workers=0)
+        workers=4,
         optimizer="Adam",
         lr0=0.01,
         save=True,
