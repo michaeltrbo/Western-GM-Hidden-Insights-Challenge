@@ -1,0 +1,5 @@
+train: "C:/Users/tyler/OneDrive/Desktop/Western-GM-Hidden-Insights-Challenge/Western-GM-Hidden-Insights-Challenge/dataset/train/images"
+val: "C:/Users/tyler/OneDrive/Desktop/Western-GM-Hidden-Insights-Challenge/Western-GM-Hidden-Insights-Challenge/dataset/val/images"
+
+nc: 3  # Number of classes
+names: ["person", "bike", "car"]
